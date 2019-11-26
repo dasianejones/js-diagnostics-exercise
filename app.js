@@ -1,6 +1,10 @@
-console.log("Hello from app.js")
+// console.log("Hello from app.js")
 
 document.body.style.backgroundColor = "red";
+
+let checkingDepositBtn = document.querySelector('#checking > .deposit');
+
+console.log(checkingDepositBtn);
 
 // enter-an-amount, deposit, withdraw, 
 
@@ -14,12 +18,8 @@ document.body.style.backgroundColor = "red";
 
 // console.log(withdrawInput);
 
-// depositBtn.addEventListener('click', function(evt) {
-//     evt.preventDefault();
-//     let cashInflow = depositBtn.value;
-//     balanceDisplay = cashInflow;
+checkingDepositBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+   console.log('hello');
 
-
-    // console.log(cashInflow);
-
-// });
+});
