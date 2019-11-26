@@ -1,13 +1,25 @@
 console.log("Hello from app.js")
 
+document.body.style.backgroundColor = "red";
+
 // enter-an-amount, deposit, withdraw, 
 
-let balanceDisplay = document.querySelector('.balance');
+// let balanceDisplay = document.querySelector('.balance');
 
-let amountInput = document.querySelector('.input');
+// let amountInput = document.querySelector('.input');
 
-let depositInput = document.querySelector('.deposit');
+// let depositBtn = document.querySelector('.deposit');
 
-let withdrawInput = document.querySelector('.withdraw');
+// let withdrawBtn = document.querySelector('.withdraw');
 
-console.log(withdrawInput);
+// console.log(withdrawInput);
+
+// depositBtn.addEventListener('click', function(evt) {
+//     evt.preventDefault();
+//     let cashInflow = depositBtn.value;
+//     balanceDisplay = cashInflow;
+
+
+    // console.log(cashInflow);
+
+// });
