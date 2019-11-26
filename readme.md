@@ -42,16 +42,23 @@ Note that these commits are all for the checking account only. Take this one acc
 - Add a click listener to the **checking account's** "Deposit" button
   - When you click the button it should `console.log("hello")`
 - On clicking "Deposit", it should get the user input
+<!-- create function that allows system to know that when the deposit button is clicked,it should return the user input -->
   - Just `console.log` it
+  <!-- console.log value of function to se if information is correct -->
   - You can save some time by hard-coding a value into the input box: `<input value="something" />`. That way you don't need to type stuff in all the time to test it.
+  <!-- create value for input box that will allow testing for different variables -->
 - On clicking "Deposit", it should update the "balance" with the user input
+<!-- create function that will allow the balance screen to update with the value that was inputed by the user on the deposit screen -->
   - Just make the user input show up. Don't worry about actually keeping track of a balance yet.
 - On "Deposit", it should get the current "balance"
+<!-- create function that will allow Deposit screen to return current balance of funds deposited -->
   - How can you get the content of the "balance" element?
   - The content has a `$` at the beginning of it, so Javascript will read it as text rather than as a number. How can you convert this text into a number?
 - On "Deposit", it updates the balance
   - Now add the user input to the balance, and make it show up in the "balance" element
+  <!-- create function that allows user input to be added to original balance and allow that value to show on the balance element part of the screen -->
 - On "Withdraw", it updates the balance
+<!-- copy function from deposit and update changes for withdrawal process to take place -->
   - Follow the same steps as before, except you're subtracting instead of adding
 - Refactor the existing code
   - Challenge: Try to have no `function()` that's longer than 5 lines. ([Sandi Metz's Rule 2](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#the-rules))
