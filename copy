@@ -55,4 +55,3 @@ checkingDepositBtn.addEventListener('click', function(evt) {
 // enter-an-amount, deposit, withdraw, 
 
 // console.log(withdrawInput);
-
