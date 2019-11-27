@@ -4,13 +4,13 @@
 
 // document.body.style.backgroundColor = "red";
 
-let checkingbalance = 0;
+let checkingBalance = 0;
 
-let savingsbalance = 0;
+let savingsBalance = 0;
 
-let checkinginput;
+let checkingInput;
 
-let savingsinput;
+let savingsInput;
 
 // line break //
 
@@ -18,9 +18,9 @@ let checkingDepositBtn = document.querySelector('#checking > .deposit');
 
 let checkingAmountInput = document.querySelector('#checking > .input');
 
-let withdrawBtn = document.querySelector('#checking > .withdraw');
+let checkingWithdrawBtn = document.querySelector('#checking > .withdraw');
 
-let balanceDisplay = document.querySelector('#checking.balance');
+let checkingBalanceDisplay = document.querySelector('#checking > .balance');
 
 console.log(checkingDepositBtn);
 
@@ -28,11 +28,11 @@ console.log(checkingDepositBtn);
 
 Deposit = (num1, num2) => {
     return num1 + num2;
-}
+};
 
 Withdraw = (num1, num2) => {
     return num1 - num2;
-}
+};
 
 // line break //
 
@@ -41,18 +41,21 @@ checkingDepositBtn.addEventListener('click', function(evt) {
     checkingInput = Number(checkingAmountInput.value);
     let newBalance = Deposit(checkingBalance, checkingInput);
     checkingBalance = newBalance;
+    UpdateDisplay(checkingBalanceDisplay, checkingBalance);
+    });
     
-    console.log(checkingInput);
-    console.log('hello');
+    // line break //
 
-});
+    UpdateDisplay = (display, updatedValue) => {
+        return display.innerHTML = updatedValue;
+    }; 
+
+    console.log(checkingBalance);
+    console.log('hello');
 
 // line break //
 
 
 
 
-// enter-an-amount, deposit, withdraw, 
-
-// console.log(withdrawInput);
 
